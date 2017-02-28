@@ -1,0 +1,17 @@
+<project basedir="." default="build" name="a1-3702">
+	<target name="build" depends="compile, jar, clean"/>
+	<target name="clean">
+        	<delete dir="comp"/>
+	</target>
+	<target name="compile">
+		<mkdir dir="./comp" />
+		<javac includeantruntime="false" srcdir="ass1" destdir="comp"/>
+	</target>
+	<target name="jar">
+		<jar destfile="./a1-3702" basedir="comp">
+		<manifest>
+		<attribute name="Main-Class" value="ass1.RobotAI"/>
+		</manifest>
+		</jar>
+	</target>
+</project>
