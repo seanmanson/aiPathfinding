@@ -6,7 +6,9 @@ UQ's 2015 COMP3702 artificial intelligence course.
 
 Given a specified input file containing robot and obstacle information,
 find the best path to take from the start to end point without colliding
-with any obstacles.
+with any obstacles. The AI itself is based on a probabilistic roadmap approach,
+combined with A* to speed up calcuations in 2D space. It supports an arm with
+many degrees of freedom (up to ~10), with potential for more with further refinement.
 
 Also included is the visualiser given to us by the lecturer.
 
