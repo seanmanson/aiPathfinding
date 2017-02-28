@@ -29,7 +29,7 @@ A robot's configuration is given by the x/y position and the relative angles bet
 ```
 xposition yposition [jointangle1] [jointangle2] [...]
 ```
-Each of these values have double precision. x and y positions are given between 0.0 and 1.0, while the angles are between -150 and 150 degrees.
+Each of these values have double precision. x and y positions are given between 0.0 and 1.0, while the angles are between -5pi/6 to 5pi/6 radians. The arms must not collide.
 
 Obstacles are rectangles given simply by the x/y coordinates of their topleft and bottom right corners:
 ```
